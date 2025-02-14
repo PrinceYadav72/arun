@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Web App</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Community Web App</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#community">Community</a></li>
+                <li><a href="#settings">Settings</a></li>
+                <li><a href="#login" id="login-link">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="news">
+            <h2>News & Announcements</h2>
+            <div id="announcements"></div>
+            <textarea id="new-announcement" placeholder="Write a new announcement..."></textarea>
+            <button onclick="postAnnouncement()">Post Announcement</button>
+        </section>
+
+        <section id="events">
+            <h2>Upcoming Events</h2>
+            <div id="event-list"></div>
+        </section>
+
+        <section id="resources">
+            <h2>Teaching Resources</h2>
+            <div id="resource-list"></div>
+        </section>
+
+        <section id="community">
+            <h2>Community Chat Room</h2>
+            <div id="chat-room">
+                <input type="text" id="chat-input" placeholder="Type your message...">
+                <button onclick="sendMessage()">Send</button>
+                <div id="chat-messages"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Community Web App. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
